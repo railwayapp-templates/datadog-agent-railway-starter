@@ -7,8 +7,6 @@ require('winston-syslog').Syslog;
 const port = process.env.PORT || 3000;
 
 // Configure the StatsD client
-console.log("Datadog Agent Host:", process.env.DD_AGENT_HOST);
-console.log("Datadog Agent StatsD Port:", process.env.DD_AGENT_STATSD_PORT);
 const statsdClient = new StatsD({
   host: process.env.DD_AGENT_HOST,
   port: process.env.DD_AGENT_STATSD_PORT,
@@ -27,7 +25,6 @@ const logger = createLogger({
   exitOnError: false,
   format: format.json(),
   transports: [
-    // Syslog transport
     new transports.Syslog({
       host: process.env.DD_AGENT_HOST,
       port: process.env.DD_AGENT_SYSLOG_PORT,
