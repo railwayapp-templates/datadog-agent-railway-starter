@@ -13,7 +13,7 @@ Configuration files -
 - `syslog.yaml` - Configures the Agent to accept syslogs over port 514 forwarded from the node app
 - `datadog.yaml` - Configures the Agent to forward logs to DataDog over HTTP (default is UDP which is not supported in Railway)
 
-## Express App
+## Node App
 
 A very simple express server with two endpoints.
 
