@@ -3,7 +3,7 @@
 
 This template deploys a DataDog Agent from the official Docker image as well as a Node Express App with two endpoints that forward metrics and logs to the agent.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/saGmYG?referralCode=gYtmvv)
 
 ## DataDog Agent
 
